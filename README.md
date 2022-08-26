@@ -1,7 +1,7 @@
-# spring-boot-rabbitmq
-Is a REST web service implemented in Java using the framework Spring Boot. It uses RabbitMQ for the communications between two modules that exists in the WS, Rest and Calculator.
-
-The WS supports the following math operations:  
+# CALCULATOR WS
+---
+**CalculatorWS** is a REST web service implemented in Java using the framework Spring Boot. 
+It uses RabbitMQ for the communications between two modules that exists in the WS, **Rest** and **Calculator**. The WS supports the following math operations:  
 - Addition
 - Subtraction
 - Multiplication
@@ -87,4 +87,3 @@ curl -i "http://localhost:8080/div?a=10&b=5"
 HTTP/1.1 200 OK Content-Type: application/json
 {"result":2}
 ```
-

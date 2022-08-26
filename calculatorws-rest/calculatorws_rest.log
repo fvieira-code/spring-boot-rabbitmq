@@ -1,0 +1,66 @@
+2022-08-26 16:19:48.919  INFO 10104 --- [main] c.c.c.rest.CalculatorWsApplication       : Starting CalculatorWsApplication on SANTIAGO-VIEIRA with PID 10104 (D:\eclipse-workspace\calculatorws-master\calculatorws-rest\target\classes started by Santiago Vieira in D:\eclipse-workspace\calculatorws-master\calculatorws-rest)
+2022-08-26 16:19:48.923  INFO 10104 --- [main] c.c.c.rest.CalculatorWsApplication       : No active profile set, falling back to default profiles: default
+2022-08-26 16:19:48.986  INFO 10104 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e3708: startup date [Fri Aug 26 16:19:48 BRT 2022]; root of context hierarchy
+2022-08-26 16:19:49.676  INFO 10104 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2022-08-26 16:19:50.843  INFO 10104 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2022-08-26 16:19:50.859  INFO 10104 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2022-08-26 16:19:50.861  INFO 10104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2022-08-26 16:19:51.074  INFO 10104 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-26 16:19:51.074  INFO 10104 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2089 ms
+2022-08-26 16:19:51.418  INFO 10104 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2022-08-26 16:19:51.422  INFO 10104 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-08-26 16:19:51.423  INFO 10104 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-08-26 16:19:51.423  INFO 10104 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-08-26 16:19:51.424  INFO 10104 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2022-08-26 16:19:51.424  INFO 10104 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'clientAwareLoggingFilter' to: [/*]
+2022-08-26 16:19:51.787  INFO 10104 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e3708: startup date [Fri Aug 26 16:19:48 BRT 2022]; root of context hierarchy
+2022-08-26 16:19:51.865  INFO 10104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sum]}" onto public org.springframework.http.ResponseEntity<com.company.calculatorws.rest.response.CalcResponse> com.company.calculatorws.rest.controller.CalcController.sum(java.math.BigDecimal,java.math.BigDecimal)
+2022-08-26 16:19:51.867  INFO 10104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sub]}" onto public org.springframework.http.ResponseEntity<com.company.calculatorws.rest.response.CalcResponse> com.company.calculatorws.rest.controller.CalcController.sub(java.math.BigDecimal,java.math.BigDecimal)
+2022-08-26 16:19:51.867  INFO 10104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/div]}" onto public org.springframework.http.ResponseEntity<com.company.calculatorws.rest.response.CalcResponse> com.company.calculatorws.rest.controller.CalcController.mul(java.math.BigDecimal,java.math.BigDecimal)
+2022-08-26 16:19:51.868  INFO 10104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mul]}" onto public org.springframework.http.ResponseEntity<com.company.calculatorws.rest.response.CalcResponse> com.company.calculatorws.rest.controller.CalcController.div(java.math.BigDecimal,java.math.BigDecimal)
+2022-08-26 16:19:51.873  INFO 10104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-08-26 16:19:51.874  INFO 10104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-08-26 16:19:51.900  INFO 10104 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-26 16:19:51.900  INFO 10104 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-26 16:19:51.926  INFO 10104 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in restExceptionHandler
+2022-08-26 16:19:51.947  INFO 10104 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-26 16:19:52.069  INFO 10104 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2022-08-26 16:19:52.144  INFO 10104 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2022-08-26 16:19:52.150  INFO 10104 --- [main] c.c.c.rest.CalculatorWsApplication       : Started CalculatorWsApplication in 3.551 seconds (JVM running for 6.154)
+2022-08-26 16:20:11.711  INFO 10104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-08-26 16:20:11.711  INFO 10104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2022-08-26 16:20:11.730  INFO 10104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2022-08-26 16:20:11.769  INFO 10104 --- [http-nio-8080-exec-1] c.c.calculatorws.rest.client.RPCClient   : b8e84427-2b2c-4ddc-a8fa-e425839421a8 --> Requesting : Sum,17,8
+2022-08-26 16:20:12.674  INFO 10104 --- [http-nio-8080-exec-1] c.c.calculatorws.rest.client.RPCClient   : b8e84427-2b2c-4ddc-a8fa-e425839421a8 <-- Got : 25
+
+GET /sum?a=17&b=8 HTTP/1.1
+host: localhost:8080
+user-agent: curl/7.55.1
+accept: */*
+
+
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+UNIQUE_ID: b8e84427-2b2c-4ddc-a8fa-e425839421a8
+Date: Fri, 26 Aug 2022 19:20:12 GMT
+Content-Type: application/json;charset=UTF-8
+
+
+
+2022-08-26 16:21:45.462  INFO 10104 --- [http-nio-8080-exec-3] c.c.calculatorws.rest.client.RPCClient   : 8246709b-66e2-474e-b621-5bb6b84a5ef1 --> Requesting : Sub,1,5
+2022-08-26 16:21:45.467  INFO 10104 --- [http-nio-8080-exec-3] c.c.calculatorws.rest.client.RPCClient   : 8246709b-66e2-474e-b621-5bb6b84a5ef1 <-- Got : -4
+
+GET /sub?a=1&b=5 HTTP/1.1
+host: localhost:8080
+user-agent: curl/7.55.1
+accept: */*
+
+
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+UNIQUE_ID: 8246709b-66e2-474e-b621-5bb6b84a5ef1
+Date: Fri, 26 Aug 2022 19:21:45 GMT
+Content-Type: application/json;charset=UTF-8
+
+
+
