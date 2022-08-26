@@ -1,0 +1,13 @@
+2022-08-26 16:20:04.840  INFO 1988 --- [main] c.c.c.calculator.CalculatorApplication   : Starting CalculatorApplication on SANTIAGO-VIEIRA with PID 1988 (D:\eclipse-workspace\calculatorws-master\calculatorws-calculator\target\classes started by Santiago Vieira in D:\eclipse-workspace\calculatorws-master\calculatorws-calculator)
+2022-08-26 16:20:04.843  INFO 1988 --- [main] c.c.c.calculator.CalculatorApplication   : No active profile set, falling back to default profiles: default
+2022-08-26 16:20:04.896  INFO 1988 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4921a5: startup date [Fri Aug 26 16:20:04 BRT 2022]; root of context hierarchy
+2022-08-26 16:20:05.606  INFO 1988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$c752e52c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-26 16:20:06.347  INFO 1988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2022-08-26 16:20:06.354  INFO 1988 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2022-08-26 16:20:06.354  INFO 1988 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2022-08-26 16:20:06.363  INFO 1988 --- [main] c.c.c.c.server.CalculatorServer          : Starting RPCServer ...
+2022-08-26 16:20:06.444  INFO 1988 --- [main] c.c.c.calculator.server.RPCServer        : >>>>> Waiting for requests <<<<<
+2022-08-26 16:20:12.667  INFO 1988 --- [main] c.c.c.calculator.server.RPCServer        : <-- Got from b8e84427-2b2c-4ddc-a8fa-e425839421a8 : Sum,17,8
+2022-08-26 16:20:12.670  INFO 1988 --- [main] c.c.c.calculator.server.RPCServer        : --> Sending to b8e84427-2b2c-4ddc-a8fa-e425839421a8 : 25
+2022-08-26 16:21:45.463  INFO 1988 --- [main] c.c.c.calculator.server.RPCServer        : <-- Got from 8246709b-66e2-474e-b621-5bb6b84a5ef1 : Sub,1,5
+2022-08-26 16:21:45.465  INFO 1988 --- [main] c.c.c.calculator.server.RPCServer        : --> Sending to 8246709b-66e2-474e-b621-5bb6b84a5ef1 : -4
